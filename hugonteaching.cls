@@ -46,6 +46,7 @@
 \tl_new:N \g_hugonteach_coursename_tl
 \tl_new:N \g_hugonteach_coursenumber_tl
 \tl_new:N \g_hugonteach_sectionnumber_tl
+\tl_new:N \g_hugonteach_semester_tl
 \tl_new:N \g_hugonteach_instructorname_tl
 
 % to get the coursetitle
@@ -61,6 +62,7 @@
 \NewDocumentCommand \coursename { m } {\tl_gset:Nn \g_hugonteach_coursename_tl {#1}}
 \NewDocumentCommand \coursenumber { m } {\tl_gset:Nn \g_hugonteach_coursenumber_tl {#1}}
 \NewDocumentCommand \sectionnumber { m } {\tl_gset:Nn \g_hugonteach_sectionnumber_tl {#1}}
+\NewDocumentCommand \semester { m } {\tl_gset:Nn \g_hugonteach_semester_tl {#1}}
 \NewDocumentCommand \instructorname { m } {\tl_gset:Nn \g_hugonteach_instructorname_tl {#1}}
 \NewDocumentCommand \showsectionintitle {} {\bool_gset_true:N \g_hugonteach_showsectionintitle_bool}
 
@@ -105,6 +107,7 @@
   coursename:~``\g_hugonteach_coursename_tl''\par
   coursenumber:~``\g_hugonteach_coursenumber_tl''\par
   sectionnumber:~``\g_hugonteach_sectionnumber_tl''\par
+  semester:~``\g_hugonteach_semester_tl''\par
   instructorname:~``\g_hugonteach_instructorname_tl''\par
   coursetitle:~``\thecoursetitle{}''\par
 
@@ -128,6 +131,7 @@
 \tl_new:N \g_hugonteach_instructoremail_tl
 \tl_new:N \g_hugonteach_meetingtimes_tl
 \tl_new:N \g_hugonteach_meetingplace_tl
+\tl_new:N \g_hugonteach_officehours_tl
 
 \seq_new:N \g_hugonteach_sylubheadll_seq
 \seq_new:N \g_hugonteach_sylubheadl_seq
@@ -142,6 +146,7 @@
 \NewDocumentCommand \instructoremail { m } {\tl_gset:Nn \g_hugonteach_instructoremail_tl {#1}}
 \NewDocumentCommand \meetingtimes { m } {\tl_gset:Nn \g_hugonteach_meetingtimes_tl {#1}}
 \NewDocumentCommand \meetingplace { m } {\tl_gset:Nn \g_hugonteach_meetingplace_tl {#1}}
+\NewDocumentCommand \officehours { m } {\tl_gset:Nn \g_hugonteach_officehours_tl {#1}}
 
 \ExplSyntaxOff
 
@@ -167,7 +172,8 @@
 \fancyhf[LH]{\g_hugonteach_doctitle_tl}
 \fancyhf[CH]{}
 \fancyhf[RH]{\thecoursetitle{}}
-\fancyhf[LF]{\g_hugonteach_instructorname_tl}
+%\fancyhf[LF]{\g_hugonteach_instructorname_tl}
+\fancyhf[LF]{\g_hugonteach_semester_tl}
 %\fancyhf[LF]{}
 \fancyhf[CF]{}
 \fancyhf[RF]{Page~\thepage{}~of~\pageref{LastPage}}
@@ -177,6 +183,13 @@
 
 \NewDocumentCommand \makesylubhead {}
 {
+
+  \bool_if:nTF {\bool_not_p:n {\tl_if_blank_p:V \g_hugonteach_semester_tl}}
+  { % section number
+    \seq_gput_right:Nn \g_hugonteach_sylubheadll_seq {Semester:}
+    \seq_gput_right:NV \g_hugonteach_sylubheadl_seq { \g_hugonteach_semester_tl }
+  }
+  {}
 
   \bool_if:nTF {\bool_not_p:n {\tl_if_blank_p:V \g_hugonteach_sectionnumber_tl}}
   { % section number
@@ -224,6 +237,13 @@
   { % section number
     \seq_gput_right:Nn \g_hugonteach_sylubheadrr_seq {Phone:}
     \seq_gput_right:NV \g_hugonteach_sylubheadr_seq { \g_hugonteach_instructorphone_tl }
+  }
+  {}
+
+  \bool_if:nTF {\bool_not_p:n {\tl_if_blank_p:V \g_hugonteach_officehours_tl}}
+  { % section number
+    \seq_gput_right:Nn \g_hugonteach_sylubheadrr_seq {Office~Hours:}
+    \seq_gput_right:NV \g_hugonteach_sylubheadr_seq { \g_hugonteach_officehours_tl }
   }
   {}
 
