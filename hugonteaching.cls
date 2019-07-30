@@ -5,17 +5,17 @@
 \ProvidesClass{hugonteaching}[2019/07/23 version 1.0 Hugon Teaching Class for syllabi, assignments, and exams]
 \NeedsTeXFormat{LaTeX2e}
 
-\LoadClass[letterpaper,12pt]{article}
+\LoadClass[letterpaper,11pt]{exam}
 
 \RequirePackage{expl3}
 %\RequirePackage[letterpaper,hmargin=1in,vmargin=0.9in,includehead,includefoot,head=15pt]{geometry}
-\RequirePackage[letterpaper,hmargin=1in,vmargin=0.9in,includehead,includefoot,head=15pt,headsep=20pt]{geometry}
+%\RequirePackage[letterpaper,hmargin=1in,vmargin=0.9in,includehead,includefoot,head=15pt,headsep=20pt]{geometry}
+\RequirePackage[letterpaper,hmargin=1in,includehead,includefoot,top=0.5in,bottom=1in,head=0.5in,foot=0.18in]{geometry}
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
 \RequirePackage{mathpazo}
 \RequirePackage{microtype}
-\RequirePackage{fancyhdr}
 \RequirePackage{lastpage}
 \RequirePackage{titling}
 \RequirePackage{xparse}
@@ -168,18 +168,11 @@
 
 \ExplSyntaxOn
 % All pages but first
-\pagestyle{fancy}
-\fancyhf[LH]{\g_hugonteach_doctitle_tl}
-\fancyhf[CH]{}
-\fancyhf[RH]{\thecoursetitle{}}
-%\fancyhf[LF]{\g_hugonteach_instructorname_tl}
-\fancyhf[LF]{\g_hugonteach_semester_tl}
-%\fancyhf[LF]{}
-\fancyhf[CF]{}
-\fancyhf[RF]{Page~\thepage{}~of~\pageref{LastPage}}
-%\fancyhf[RF]{\thepage{} / \pageref{LastPage}}
-\renewcommand{\headrulewidth}{0.5pt}
-\renewcommand{\footrulewidth}{0.5pt}
+\pagestyle{headandfoot}
+\header{\g_hugonteach_doctitle_tl}{}{\thecoursetitle{}}
+\footer{\g_hugonteach_semester_tl}{}{Page~\thepage{}~of~\pageref{LastPage}}
+\headrule
+\footrule
 
 \NewDocumentCommand \makesylubhead {}
 {
