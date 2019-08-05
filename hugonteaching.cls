@@ -32,6 +32,7 @@
 %\RequirePackage{tikz}
 %\usetikzlibrary{backgrounds}
 %\usetikzlibrary{fit}
+\RequirePackage{hyperref}
 
 \newcolumntype{W}{>{\raggedleft\arraybackslash}X} % ragged left fill in width in tabularx
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X} % ragged right fill in width in tabularx
