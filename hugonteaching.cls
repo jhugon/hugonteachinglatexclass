@@ -10,7 +10,7 @@
 \RequirePackage{expl3}
 %\RequirePackage[letterpaper,hmargin=1in,vmargin=0.9in,includehead,includefoot,head=15pt]{geometry}
 %\RequirePackage[letterpaper,hmargin=1in,vmargin=0.9in,includehead,includefoot,head=15pt,headsep=20pt]{geometry}
-\RequirePackage[letterpaper,hmargin=1in,includehead,includefoot,top=0.5in,bottom=1in,head=0.5in,foot=0.18in]{geometry}
+\RequirePackage[letterpaper,hmargin=0.7in,includehead,includefoot,top=0.4in,bottom=0.78in,head=0.5in,foot=0.18in]{geometry}
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
