@@ -67,7 +67,11 @@
 \NewDocumentCommand \instructorname { m } {\tl_gset:Nn \g_hugonteach_instructorname_tl {#1}}
 \NewDocumentCommand \showsectionintitle {} {\bool_gset_true:N \g_hugonteach_showsectionintitle_bool}
 
-\NewDocumentCommand \thecoursetitle {} 
+
+\NewDocumentCommand \thecoursetitle {} {\thecoursetitlefunc{,\ }}
+\NewDocumentCommand \thecoursetitlebig {} {\thecoursetitlefunc{\\}}
+
+\NewDocumentCommand \thecoursetitlefunc { m } 
 {
   \bool_set:Nn \l_hugonteach_coursename_bool {\bool_not_p:n {\tl_if_blank_p:V \g_hugonteach_coursename_tl}}
   \bool_set:Nn \l_hugonteach_coursenumber_bool {\bool_not_p:n {\tl_if_blank_p:V \g_hugonteach_coursenumber_tl}}
@@ -82,7 +86,7 @@
 
   \bool_if:nTF \l_hugonteach_coursenameandnumber_bool
   { % name and number
-    \tl_set:cn \l_hugonteach_coursetitle_tl {\g_hugonteach_coursenumber_tl : ~ \g_hugonteach_coursename_tl}
+    \tl_set:cn \l_hugonteach_coursetitle_tl {\mbox{\g_hugonteach_coursenumber_tl} : ~ \g_hugonteach_coursename_tl}
   }
   { % not (name and number)
     \tl_set:cn \l_hugonteach_coursetitle_tl {\g_hugonteach_coursenumber_tl \g_hugonteach_coursename_tl}
@@ -91,7 +95,7 @@
   { % section number
     \bool_if:nTF \g_hugonteach_showsectionintitle_bool
     {
-      \tl_put_right:cn \l_hugonteach_coursetitle_tl {,\ Section:~\g_hugonteach_sectionnumber_tl}
+      \tl_put_right:cn \l_hugonteach_coursetitle_tl {#1\mbox{Section:~\g_hugonteach_sectionnumber_tl}}
     }
     {}
   }
@@ -185,7 +189,7 @@
   }
   {}
 
-  \bool_if:nTF {\bool_not_p:n {\tl_if_blank_p:V \g_hugonteach_sectionnumber_tl}}
+  \bool_if:nTF {\bool_lazy_and_p:nn {\bool_not_p:n {\tl_if_blank_p:V \g_hugonteach_sectionnumber_tl}} {\bool_not_p:n {\g_hugonteach_showsectionintitle_bool}} }
   { % section number
     \seq_gput_right:Nn \g_hugonteach_sylubheadll_seq {Section:}
     \seq_gput_right:NV \g_hugonteach_sylubheadl_seq { \g_hugonteach_sectionnumber_tl }
@@ -255,7 +259,7 @@
   %%
   \par
   {\centering
-    \Huge \thecoursetitle{} \par
+    \Huge \thecoursetitlebig{} \par
   }
   \vspace{1em}
   \begin{onehalfspace}
