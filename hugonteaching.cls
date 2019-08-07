@@ -283,3 +283,97 @@
 }
 
 \ExplSyntaxOff
+
+\newcommand{\oglethorpehonorcode}{
+Persons who come to Oglethorpe University for work and study join a community
+that is committed to high standards of academic honesty. The honor code
+contains the responsibilities we accept by becoming members of the community
+and the procedures we will follow should our commitment to honesty be
+questioned. See section 11 of the
+\href{https://bulletin.oglethorpe.edu/}{2019-2020 Bulletin} for a complete
+description of all policies and procedures.
+
+The students, faculty and staff of Oglethorpe University expect each other to
+act with integrity in the academic endeavor they share. Members of the faculty
+expect that students complete work honestly and act toward them in ways
+consistent with that expectation. Students are expected to behave honorably in
+their academic work and are expected to insist on honest behavior from their
+peers.
+
+Oglethorpe welcomes all who accept our principles of honest behavior. We
+believe that this code will enrich our years at the University and allow us to
+practice living in earnest the honorable, self-governed lives required of
+society’s respected leaders.
+
+Our honor code is an academic one. The code proscribes cheating in general
+terms and also in any of its several specialized sub-forms (including but not
+limited to plagiarism, lying, stealing and interacting fraudulently or
+disingenuously with the honor council). The Code defines cheating as ``the
+umbrella under which all academic malfeasance falls. Cheating is any willful
+activity involving the use of deceit or fraud in order to attempt to secure an
+unfair academic advantage for oneself or others or to attempt to cause an
+unfair academic disadvantage to others. Cheating deprives persons of the
+opportunity for a fair and reasonable assessment of their own work and/or a
+fair comparative assessment between and among the work produced by members of a
+group. More broadly, cheating undermines our community’s confidence in the
+honorable state to which we aspire."
+
+The honor code applies to all behavior related to the academic enterprise.
+Thus, it extends beyond the boundaries of particular courses and classrooms per
+se, and yet it does not extend out of the academic realm into the purely social
+one. Examples of cheating include but are not limited to:
+
+\begin{enumerate}
+  \item The unauthorized possession or use of notes, texts, electronic devices (including, for example, computers and mobile phones), online materials or other such unauthorized materials/devices in fulfillment of course requirements.
+  \item Copying another person’s work or participation in such an effort.
+  \item An attempt or participation in an attempt to fulfill the requirements of a course with work other than one’s original work for that course.
+  \item Forging or deliberately misrepresenting data or results.
+  \item Obtaining or offering either for profit or free of charge materials one might submit (or has submitted) for academic credit. This includes uploading course materials to online sites devoted, in whole or in part, to aiding and abetting cheating under the guise of providing “study aids.” There is no prohibition concerning uploading exemplars of one’s work to one’s personal website or to departmental, divisional, University or professional society websites for purposes of publicity, praise, examination or review by potential employers, graduate school admissions committees, etc.
+  \item Violating the specific directions concerning the operation of the honor code in relation to a particular assignment. 
+  \item Making unauthorized copies of graded work for future distribution.
+  \item Claiming credit for a group project to which one did not contribute.
+  \item Plagiarism, which includes representing someone else’s words, ideas, data or original research as one’s own and in general failing to footnote or otherwise acknowledge the source of such work. One has the responsibility of avoiding plagiarism by taking adequate notes on reference materials (including material taken off the internet or other electronic sources) used in the preparation of reports, papers and other coursework.
+  \item Lying, such as: Lying about the reason for an absence to avoid a punitive attendance penalty or to receive an extension on an exam or on a paper’s due date; fraudulently obtaining Petrel Points by leaving an event soon after registering one’s attendance and without offering to surrender the associated Petrel Point, or by claiming fictitious attendance for oneself or another; forging or willfully being untruthful on documents related to the academic enterprise, such as on an application for an independent study or on a registration form.
+  \item Stealing, such as: Stealing another’s work so that he/she may not submit it or so that work can be illicitly shared; stealing reserve or other materials from the library; stealing devices and materials (such as computers, calculators, textbooks, notebooks and software) used in whole or in part to support the academic enterprise.
+  \item Fraudulent interaction on the part of students with the honor council, such as: Willfully refusing to testify after having been duly summoned; failing to appear to testify (barring a bona fide last-minute emergency) after having been duly summoned; testifying untruthfully.
+\end{enumerate}
+
+Students pledge that they have completed assignments honestly by attaching the
+following statement to each piece of work submitted in partial fulfillment of
+the requirements for a course taken for academic credit:
+
+\begin{center}
+ ``I pledge that I have acted honorably.'' (Followed by the student’s signature)
+\end{center}
+
+The honor code is in force for every student who is enrolled (either full- or
+part-time) in any of the academic programs of Oglethorpe University at any
+given time. All cases of suspected academic dishonesty will be handled in
+accordance with the provisions established in this code. The honor council has
+sole jurisdiction in matters of suspected academic dishonesty. Alternative ways
+of dealing with cases of suspected academic fraud are prohibited. In cases of
+alleged academic dishonesty on the part of students, the honor council is the
+final arbiter.
+}
+
+
+\newcommand{\oglethorpelettergradetable}[1]{
+\begin{center}
+  \begin{tabular}{ll}  \toprule
+                & Grade Numerical \\
+  Letter Grade  & Equivalent $#1$ [\%] \\ \midrule
+  $\mathrm{A}$  & $93 \leq #1 \leq 100$ \\
+  $\mathrm{A-}$ & $90 \leq #1 <    93$  \\
+  $\mathrm{B+}$ & $87 \leq #1 <    90$  \\
+  $\mathrm{B}$  & $83 \leq #1 <    87$  \\
+  $\mathrm{B-}$ & $80 \leq #1 <    83$  \\
+  $\mathrm{C+}$ & $77 \leq #1 <    80$  \\
+  $\mathrm{C}$  & $73 \leq #1 <    77$  \\
+  $\mathrm{C-}$ & $70 \leq #1 <    73$  \\
+  $\mathrm{D+}$ & $67 \leq #1 <    70$  \\
+  $\mathrm{D}$  & $60 \leq #1 <    67$  \\
+  $\mathrm{F}$  & $#1 < 60$   \\
+  \bottomrule
+  \end{tabular}
+\end{center}
+}
