@@ -376,4 +376,8 @@ final arbiter.
   \bottomrule
   \end{tabular}
 \end{center}
+
+An incomplete (I) will only be given under the rarest circumstances. See
+section 6.20.2 of the \href{https://bulletin.oglethorpe.edu/}{2019-2020
+Bulletin} for a summary of requirements.
 }
