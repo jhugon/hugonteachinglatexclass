@@ -14,6 +14,7 @@
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
+\RequirePackage{amsmath}
 \RequirePackage{mathpazo}
 \RequirePackage{microtype}
 \RequirePackage{lastpage}
