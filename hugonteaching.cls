@@ -386,3 +386,14 @@ An incomplete (I) will only be given under the rarest circumstances. See
 section 6.20.2 of the \href{https://bulletin.oglethorpe.edu/}{2019-2020
 Bulletin} for a summary of requirements.
 }
+
+\newcommand{\oglethorpeaccomodation}{
+\section*{Accessibility}
+If you have any accessibility needs, please contact Accessibility Services
+(Accessibility@Oglethorpe.edu). It is your responsability to identify yourself
+to Accessibility Services and present proper medical documentation to them.
+They will then notify me of the appropriate accomodation for your needs. It is
+best if Accessibility Services has this responsibility to make sure that all
+students are treated fairly and appropriately. I am happy to work with you and 
+Accessibility Services to make sure your needs are met.
+}
