@@ -15,6 +15,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
 \RequirePackage{amsmath}
+\RequirePackage{bm}
 \RequirePackage{mathpazo}
 \RequirePackage{microtype}
 \RequirePackage{lastpage}
@@ -171,6 +172,21 @@
 \newcommand{\tredbf}[1]{\textcolor{red}{\bf #1}}
 \newcommand{\tbluebf}[1]{\textcolor{blue}{\bf #1}}
 \newcommand{\tgreenbf}[1]{\textcolor{darkgreen}{\bf #1}}
+\newcommand{\keV}{\ensuremath{\,\mathrm{ke\kern -0.1em V}}}
+\newcommand{\keVc}{\ensuremath{\,\mathrm{ke\kern -0.1em V\!/c}}}
+\newcommand{\keVcc}{\ensuremath{\,\mathrm{ke\kern -0.1em V\!/c}^2}}
+\newcommand{\MeV}{\ensuremath{\,\mathrm{Me\kern -0.1em V}}}
+\newcommand{\MeVc}{\ensuremath{\,\mathrm{Me\kern -0.1em V\!/c}}}
+\newcommand{\MeVcc}{\ensuremath{\,\mathrm{Me\kern -0.1em V\!/c}^2}}
+\newcommand{\GeV}{\ensuremath{\,\mathrm{Ge\kern -0.1em V}}}
+\newcommand{\GeVc}{\ensuremath{\,\mathrm{Ge\kern -0.1em V\!/c}}}
+\newcommand{\GeVcc}{\ensuremath{\,\mathrm{Ge\kern -0.1em V\!/c}^2}}
+\newcommand{\TeV}{\ensuremath{\,\mathrm{Te\kern -0.1em V}}}
+\newcommand{\TeVc}{\ensuremath{\,\mathrm{Te\kern -0.1em V\!/c}}}
+\newcommand{\TeVcc}{\ensuremath{\,\mathrm{Te\kern -0.1em V\!/c}^2}}
+\newcommand{\ihat}{\ensuremath{\,\bm{\hat{\imath}}}}
+\newcommand{\jhat}{\ensuremath{\,\bm{\hat{\jmath}}}}
+\newcommand{\khat}{\ensuremath{\,\bm{\hat{k}}}}
 
 \ExplSyntaxOn
 % All pages but first
