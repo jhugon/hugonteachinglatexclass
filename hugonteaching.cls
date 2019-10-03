@@ -164,6 +164,8 @@
 
 \definecolor{darkgreen}{HTML}{008000}
 \definecolor{light-gray}{gray}{0.8}
+\DeclareSIUnit\lightyear{ly}
+\DeclareSIUnit\parsec{pc}
 
 \newcommand{\jra}{\ensuremath{\rightarrow}}
 \newcommand{\tred}[1]{\textcolor{red}{#1}}
