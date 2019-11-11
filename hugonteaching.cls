@@ -31,9 +31,13 @@
 \RequirePackage{multirow}
 \RequirePackage{booktabs}
 \RequirePackage{setspace}
-%\RequirePackage{tikz}
+\RequirePackage{tikz}
+\usetikzlibrary{datavisualization}
+\usetikzlibrary{datavisualization.formats.functions}
 %\usetikzlibrary{backgrounds}
 %\usetikzlibrary{fit}
+\RequirePackage{pgfplots}
+\RequirePackage{wrapfig}
 \RequirePackage{hyperref}
 
 \newcolumntype{W}{>{\raggedleft\arraybackslash}X} % ragged left fill in width in tabularx
