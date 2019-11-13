@@ -15,6 +15,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
 \RequirePackage{amsmath}
+\RequirePackage{amssymb}
 \RequirePackage{bm}
 \RequirePackage{mathpazo}
 \RequirePackage{microtype}
@@ -193,6 +194,8 @@
 \newcommand{\ihat}{\ensuremath{\,\bm{\hat{\imath}}}}
 \newcommand{\jhat}{\ensuremath{\,\bm{\hat{\jmath}}}}
 \newcommand{\khat}{\ensuremath{\,\bm{\hat{k}}}}
+% For exam class checkboxes env:
+\checkboxchar{$\Box$}
 
 \ExplSyntaxOn
 % All pages but first
