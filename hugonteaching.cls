@@ -167,6 +167,8 @@
 %Prefer PDF over png/jpeg
 \DeclareGraphicsExtensions{.pdf,.png,.gif,.jpg}
 
+\sisetup{per-mode=symbol}
+
 \definecolor{darkgreen}{HTML}{008000}
 \definecolor{light-gray}{gray}{0.8}
 \DeclareSIUnit\lightyear{ly}
