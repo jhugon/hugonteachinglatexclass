@@ -388,7 +388,6 @@ alleged academic dishonesty on the part of students, the honor council is the
 final arbiter.
 }
 
-
 \newcommand{\oglethorpelettergradetable}[1]{
 \begin{center}
   \begin{tabular}{ll}  \toprule
@@ -424,3 +423,33 @@ best if Accessibility Services has this responsibility to make sure that all
 students are treated fairly and appropriately. I am happy to work with you and 
 Accessibility Services to make sure your needs are met.
 }
+
+
+\ExplSyntaxOn
+\newcommand{\assignmenttitlenameline}{
+  \vspace{0.5in}
+  \begin{center}
+    {\bf \huge 
+    \g_hugonteach_doctitle_tl
+    }
+  \end{center}
+  \vspace{0.2in}
+  \makebox[\textwidth]{\hspace{3.5in}Name:\enspace\hrulefill}
+  \vspace{0.2in}
+}
+
+\newcommand{\oglethorpeassignmenttitlenameline}{
+  \vspace{0.5in}
+  \ExplSyntaxOn
+  \begin{center}
+    {\bf \huge 
+    \g_hugonteach_doctitle_tl
+    }
+  \end{center}
+  \ExplSyntaxOff
+  \vspace{0.2in}
+  \emph{``I~pledge~that~I~have~acted~honorably''}
+  \hspace{0.2\textwidth}Name:\enspace\hrulefill
+  \vspace{0.2in}
+}
+\ExplSyntaxOff
