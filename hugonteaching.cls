@@ -33,6 +33,7 @@
 \RequirePackage{booktabs}
 \RequirePackage{setspace}
 \RequirePackage{tikz}
+\usetikzlibrary{calc}
 \usetikzlibrary{datavisualization}
 \usetikzlibrary{datavisualization.formats.functions}
 %\usetikzlibrary{backgrounds}
