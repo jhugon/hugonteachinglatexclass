@@ -25,6 +25,7 @@
 \RequirePackage{bm}
 \RequirePackage[table]{xcolor}
 \RequirePackage{siunitx}
+\RequirePackage{isotope}
 \RequirePackage{graphicx}
 \RequirePackage{array}
 \RequirePackage{tabularx}
