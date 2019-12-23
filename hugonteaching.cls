@@ -53,6 +53,7 @@
 
 \ExplSyntaxOn
 \tl_new:N \g_hugonteach_doctitle_tl
+\tl_new:N \g_hugonteach_institution_tl
 \tl_new:N \g_hugonteach_coursename_tl
 \tl_new:N \g_hugonteach_coursenumber_tl
 \tl_new:N \g_hugonteach_sectionnumber_tl
@@ -73,6 +74,7 @@
 \NewDocumentCommand \coursenumber { m } {\tl_gset:Nn \g_hugonteach_coursenumber_tl {#1}}
 \NewDocumentCommand \sectionnumber { m } {\tl_gset:Nn \g_hugonteach_sectionnumber_tl {#1}}
 \NewDocumentCommand \semester { m } {\tl_gset:Nn \g_hugonteach_semester_tl {#1}}
+\NewDocumentCommand \institution { m } {\tl_gset:Nn \g_hugonteach_institution_tl {#1}}
 \NewDocumentCommand \instructorname { m } {\tl_gset:Nn \g_hugonteach_instructorname_tl {#1}}
 \NewDocumentCommand \showsectionintitle {} {\bool_gset_true:N \g_hugonteach_showsectionintitle_bool}
 
@@ -118,11 +120,12 @@
   \vspace{1em}
   \textbf{Debug~Hugon~Variables:}\par
   doctitle:~``\g_hugonteach_doctitle_tl''\par
+  institution:~``\g_hugonteach_institution_tl''\par
   coursename:~``\g_hugonteach_coursename_tl''\par
   coursenumber:~``\g_hugonteach_coursenumber_tl''\par
   sectionnumber:~``\g_hugonteach_sectionnumber_tl''\par
-  semester:~``\g_hugonteach_semester_tl''\par
   instructorname:~``\g_hugonteach_instructorname_tl''\par
+  semester:~``\g_hugonteach_semester_tl''\par
   coursetitle:~``\thecoursetitle{}''\par
 
   meetingtimes:~``\g_hugonteach_meetingtimes_tl''\par
@@ -205,7 +208,7 @@
 % All pages but first
 \pagestyle{headandfoot}
 \header{\g_hugonteach_doctitle_tl}{}{\thecoursetitle{}}
-\footer{\g_hugonteach_semester_tl}{}{Page~\thepage{}~of~\pageref{LastPage}}
+\footer{\g_hugonteach_semester_tl}{\g_hugonteach_institution_tl}{Page~\thepage{}~of~\pageref{LastPage}}
 \headrule
 \footrule
 
