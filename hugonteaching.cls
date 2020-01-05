@@ -13,6 +13,8 @@
 \RequirePackage[letterpaper,hmargin=0.7in,includehead,includefoot,top=0.4in,bottom=0.78in,head=0.5in,foot=0.18in]{geometry}
 
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{textcomp}
 \RequirePackage[english]{babel}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
