@@ -42,6 +42,7 @@
 \RequirePackage{pgfplots}
 \RequirePackage{wrapfig}
 \RequirePackage{hyperref}
+\RequirePackage{cleveref}
 
 \newcolumntype{W}{>{\raggedleft\arraybackslash}X} % ragged left fill in width in tabularx
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X} % ragged right fill in width in tabularx
