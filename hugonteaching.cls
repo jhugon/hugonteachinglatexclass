@@ -40,6 +40,7 @@
 \usetikzlibrary{calc}
 \usetikzlibrary{datavisualization}
 \usetikzlibrary{datavisualization.formats.functions}
+\usetikzlibrary{quotes}
 %\usetikzlibrary{backgrounds}
 %\usetikzlibrary{fit}
 \RequirePackage{pgfplots}
