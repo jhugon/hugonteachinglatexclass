@@ -43,6 +43,8 @@
 \usetikzlibrary{quotes}
 %\usetikzlibrary{backgrounds}
 %\usetikzlibrary{fit}
+\usetikzlibrary{arrows}
+\tikzset{>=latex}
 \RequirePackage{pgfplots}
 \RequirePackage{wrapfig}
 \RequirePackage{hyperref}
